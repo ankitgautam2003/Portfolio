@@ -52,18 +52,28 @@ export function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark" data-testid="navigation">
+      <nav
+        className="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark"
+        data-testid="navigation"
+      >
         <div className="nav-indicator"></div>
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold gradient-text" data-testid="logo">JD</div>
+            <div
+              className="text-2xl font-bold gradient-text"
+              data-testid="logo"
+            >
+              AG
+            </div>
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
                   className={`text-sm font-medium hover:text-primary transition-colors duration-300 ${
-                    activeSection === item.href.substring(1) ? "text-primary" : ""
+                    activeSection === item.href.substring(1)
+                      ? "text-primary"
+                      : ""
                   }`}
                   data-testid={`nav-link-${item.label.toLowerCase()}`}
                 >
@@ -77,7 +87,11 @@ export function Navigation() {
                 className="p-2 rounded-lg bg-secondary hover:bg-muted transition-colors duration-300"
                 data-testid="theme-toggle"
               >
-                <i className={`fas ${theme === "dark" ? "fa-sun" : "fa-moon"} text-lg`}></i>
+                <i
+                  className={`fas ${
+                    theme === "light" ? "fa-sun" : "fa-moon"
+                  } text-lg`}
+                ></i>
               </button>
               <button
                 className="md:hidden p-2"

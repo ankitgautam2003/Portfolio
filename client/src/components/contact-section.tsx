@@ -53,7 +53,9 @@ export function ContactSection() {
     },
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -67,25 +69,45 @@ export function ContactSection() {
     {
       icon: "fas fa-envelope",
       title: "Email",
-      value: "john@example.com",
+      value: "ankitgautam6835@gmail.com",
     },
     {
       icon: "fas fa-phone",
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+92 9889524500",
     },
     {
       icon: "fas fa-map-marker-alt",
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Uttar Pradesh, India",
     },
   ];
 
   const socialLinks = [
-    { icon: "fab fa-linkedin", href: "#", testId: "social-linkedin" },
-    { icon: "fab fa-github", href: "#", testId: "social-github" },
-    { icon: "fab fa-twitter", href: "#", testId: "social-twitter" },
-    { icon: "fab fa-dribbble", href: "#", testId: "social-dribbble" },
+    {
+      icon: "fab fa-linkedin",
+      href: "https://www.linkedin.com/in/ankit-gautam-85a807259/",
+      testId: "social-linkedin",
+    },
+    {
+      icon: "fab fa-github",
+      href: "https://github.com/ankitgautam2003",
+      testId: "social-github",
+    },
+    {
+      icon: "fab fa-twitter",
+      href: "https://x.com/ankit_gautam_03",
+      testId: "social-twitter",
+    },
+    // { icon: "fab fa-dribbble", href: "#", testId: "social-dribbble" },
+    {
+      icon: "fab fa-instagram",
+      href: "https://www.instagram.com/ankit_gautam_03/",
+      testId: "social-instagram",
+    },
+    // { icon: "fab fa-facebook", href: "#", testId: "social-facebook" },
+    // { icon: "reddit fa-reddit", href: "#", testId: "social-reddit" },
+    // { icon: "email fa-envelope", href: "#", testId: "social-email" },
   ];
 
   return (
@@ -96,29 +118,55 @@ export function ContactSection() {
       data-testid="contact-section"
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text" data-testid="contact-title">
+        <h2
+          className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text"
+          data-testid="contact-title"
+        >
           Get In Touch
         </h2>
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-4" data-testid="contact-subtitle">
+              <h3
+                className="text-2xl font-semibold mb-4"
+                data-testid="contact-subtitle"
+              >
                 Let's Work Together
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed" data-testid="contact-description">
-                I'm always interested in new opportunities and exciting projects. Whether you have a specific project in mind or just want to chat about technology and design, I'd love to hear from you.
+              <p
+                className="text-lg text-muted-foreground leading-relaxed"
+                data-testid="contact-description"
+              >
+                I'm always interested in new opportunities and exciting
+                projects. Whether you have a specific project in mind or just
+                want to chat about technology and design, I'd love to hear from
+                you.
               </p>
             </div>
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-center space-x-4" data-testid={`contact-info-${index}`}>
+                <div
+                  key={index}
+                  className="flex items-center space-x-4"
+                  data-testid={`contact-info-${index}`}
+                >
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
                     <i className={`${info.icon} text-primary text-xl`}></i>
                   </div>
                   <div>
-                    <h4 className="font-medium" data-testid={`contact-info-title-${index}`}>{info.title}</h4>
-                    <p className="text-muted-foreground" data-testid={`contact-info-value-${index}`}>{info.value}</p>
+                    <h4
+                      className="font-medium"
+                      data-testid={`contact-info-title-${index}`}
+                    >
+                      {info.title}
+                    </h4>
+                    <p
+                      className="text-muted-foreground"
+                      data-testid={`contact-info-value-${index}`}
+                    >
+                      {info.value}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -132,14 +180,20 @@ export function ContactSection() {
                   className="w-12 h-12 bg-secondary hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-300 group"
                   data-testid={social.testId}
                 >
-                  <i className={`${social.icon} text-xl group-hover:text-white`}></i>
+                  <i
+                    className={`${social.icon} text-xl group-hover:text-white`}
+                  ></i>
                 </a>
               ))}
             </div>
           </div>
 
           <div className="glass dark:glass-dark rounded-xl p-8">
-            <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+              data-testid="contact-form"
+            >
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First Name</Label>
