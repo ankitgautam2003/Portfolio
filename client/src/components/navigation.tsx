@@ -60,17 +60,24 @@ export function Navigation() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div
-              className="text-2xl font-bold gradient-text"
+              className="cursor-pointer"
+              onClick={() => handleNavClick("#home")}
               data-testid="logo"
             >
-              AG
+              <img
+                src="https://github.com/ankitgautam2003/FoodApp/blob/main/LOGO.png?raw=true" // 🌐 replace with your image URL
+                alt="Logo"
+                className="w-[100px] h-[100px] md:w-[100px] md:h-[100px]"
+              />
             </div>
+
+            {/* Desktop Nav */}
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`text-sm font-medium hover:text-primary transition-colors duration-300 ${
+                  className={`text-xl font-medium hover:text-primary transition-colors duration-300 ${
                     activeSection === item.href.substring(1)
                       ? "text-primary"
                       : ""
@@ -81,6 +88,8 @@ export function Navigation() {
                 </button>
               ))}
             </div>
+
+            {/* Right-side controls */}
             <div className="flex items-center space-x-4">
               <button
                 onClick={toggleTheme}
