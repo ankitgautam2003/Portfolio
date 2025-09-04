@@ -41,55 +41,63 @@ export function ProjectsSection() {
     {
       title: "Voxa",
       description:
-        "An intelligent chat assistant powered by AI with natural language processing, context awareness, and multi-language support.",
+        "Voxa is a Node.js framework that helps you build chat and voice apps for platforms like Alexa, Google Assistant, Messenger, and Telegram. It uses a simple structure to manage conversations, making it easy to create smart, interactive apps that work across different platforms.",
       image:
         "https://static.vecteezy.com/system/resources/thumbnails/021/626/268/small_2x/system-artificial-intelligence-chatgpt-chat-bot-ai-technology-smart-robot-ai-chat-gpt-application-software-photo.jpg",
       alt: "AI Chat Assistant - Intelligent chatbot conversation interface",
-      technologies: ["Vue.js", "Python", "OpenAI", "FastAPI"],
+      technologies: ["Node.js", "JavaScript", "React"],
       githubUrl: "https://github.com/ankitgautam2003/voxa.git",
       // liveUrl: "#",
     },
     {
       title: "TribeTalk",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "TribeTalk is a full-stack Reddit-style discussion platform built with Flutter and Firebase. It features a responsive Flutter frontend for creating and managing communities, sharing posts in multiple formats, and engaging with others through voting and commenting, while Firebase powers authentication, user profiles, and theme customization to deliver a seamless interactive experience.",
       image:
         "https://thumbs.dreamstime.com/b/chat-logo-design-chatting-app-icon-bubble-speech-symbol-line-art-style-illustration-vector-226585557.jpg",
       alt: "Task Manager App - Kanban board project management interface",
-      technologies: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL"],
+      technologies: ["Dart", "Flutter", "Firebase", "Riverpod"],
       githubUrl: "https://github.com/ankitgautam2003/TribeTalk.git",
       // liveUrl: "#",
     },
     {
       title: "Weather_App",
       description:
-        "A comprehensive analytics dashboard with interactive charts, real-time data visualization, and customizable reports for business intelligence.",
+        "Weather_App is a cross-platform weather application built with Flutter. It features a Flutter-based responsive interface for Android, iOS, web, and desktop platforms, providing users with a seamless foundation to display real-time weather data and interactive forecasts.",
       image:
         "https://tse4.mm.bing.net/th/id/OIP.NbjnwMg18cby6dPXfW3rQgHaFj?cb=thfc1&w=1080&h=810&rs=1&pid=ImgDetMain&o=7&rm=3",
       alt: "Analytics Dashboard - Data visualization and reporting interface",
-      technologies: ["React", "D3.js", "Express", "Redis"],
+      technologies: ["Dart", "Flutter"],
       githubUrl: "https://github.com/ankitgautam2003/Weather_App.git",
       // liveUrl: "#",
     },
     {
       title: "FoodApp",
       description:
-        "A mobile-first social media application with real-time messaging, photo sharing, and social networking features built with React Native.",
+        "FoodApp is a cross-platform food application built with Flutter. It provides a responsive foundation for Android, iOS, web, and desktop platforms, serving as a starting point to build features like food browsing, ordering, and recipe management.",
       image:
         "https://shef.com/homemade-food/wp-content/uploads/filipino-food-philippines-history-homemade.jpeg",
       alt: "Social Media App - Mobile-first social networking interface",
-      technologies: ["React Native", "Firebase", "GraphQL", "Apollo"],
+      technologies: ["Dart", "Flutter"],
       githubUrl: "https://github.com/ankitgautam2003/FoodApp.git",
       // liveUrl: "#",
     },
     {
       title: "License-Plate-Detection-and-Validation",
       description:
-        "An intelligent chat assistant powered by AI with natural language processing, context awareness, and multi-language support.",
+        "Automatic-License-Plate-Detection-and-Validation is a Python-based computer vision project that leverages YOLOv5 for detecting vehicle license plates and Tesseract OCR for extracting plate numbers. Optimized for Google Colab, it supports custom datasets with automated train, validation, and test splits, providing an end-to-end solution for real-time license plate recognition and validation.",
       image:
         "https://s3.amazonaws.com/cms.iterate.ai/img_drive_thru_0dff0702e8.jpg",
       alt: "AI Chat Assistant - Intelligent chatbot conversation interface",
-      technologies: ["Vue.js", "Python", "OpenAI", "FastAPI"],
+      technologies: [
+        "python",
+        "PyTorch",
+        "YoloV5",
+        "Tesseract",
+        "OpenCV",
+        "Numpy",
+        "Pandas",
+      ],
       githubUrl:
         "https://github.com/ankitgautam2003/Automatic-License-Plate-Detection-and-Validation.git",
       // liveUrl: "#",
@@ -97,18 +105,28 @@ export function ProjectsSection() {
     {
       title: "Disease-prediction",
       description:
-        "A stunning portfolio website for creative professionals with advanced animations, 3D elements, and interactive showcases.",
+        "Disease-prediction is a personalized disease prediction platform built using AI. It features a Flask-based web interface that employs both environmental and genetic data models (via pre-trained classifiers like SVC, Random Forest, etc.) to predict medical conditions, offering a customized and data-driven diagnostic experience.",
       image:
         "https://tse3.mm.bing.net/th/id/OIP.p2GIZKc0TCHUj5eres2IuwHaEq?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3",
       alt: "Creative Portfolio - Modern designer portfolio website interface",
-      technologies: ["Three.js", "GSAP", "Nuxt.js", "WebGL"],
+      technologies: [
+        "Python",
+        "TensorFlow / Keras",
+        "OpenCV",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Scikit-learn",
+        "Jupyter Notebook",
+      ],
+
       githubUrl: "https://github.com/ankitgautam2003/Disease-prediction.git",
       // liveUrl: "#",
     },
     {
       title: "Image-Forgery-Detection-and-Validation",
       description:
-        "A stunning portfolio website for creative professionals with advanced animations, 3D elements, and interactive showcases.",
+        "Image Forgery Detection and Validation is a Python-based project that uses Error Level Analysis and deep learning to detect and validate manipulated images through both Jupyter workflows and a simple GUI.",
       image:
         "https://c8.alamy.com/comp/2C2MCTT/magnifying-glass-with-id-card-icon-on-old-paper-with-red-vertical-line-background-identification-concept-2C2MCTT.jpg",
       alt: "Creative Portfolio - Modern designer portfolio website interface",
