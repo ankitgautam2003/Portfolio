@@ -18,6 +18,14 @@ export function ExperienceSection() {
       period: "May 2025 - July 2025",
       description:
         "Developed responsive Flutter UI components using clean architecture and advanced state handling, enhancing usability across Android and web applications. Translated Figma prototypes into pixel-perfect interfaces and integrated RESTful APIs with Node.js and MongoDB to deliver scalable backend features.",
+      position: "right",
+    },
+    {
+      title: "Frontend Developer [Freelancer]",
+      company: "MEDHWAN EduTech",
+      period: "May 2025 - June 2025",
+      description:
+        "Developed and optimized responsive frontend components for MEDHWAN EduTech's 'Prajawal' platform, building an intuitive design system for visual consistency. Collaborated on the seamless integration of user interfaces with backend APIs for robust functionality.",
       position: "left",
     },
   ];

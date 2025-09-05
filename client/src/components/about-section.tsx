@@ -56,17 +56,17 @@ export function AboutSection() {
               coffee.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              {/* <span
+              <span
                 className="px-4 py-2 bg-secondary rounded-lg text-sm font-medium"
                 data-testid="skill-tag-frontend"
               >
-                Frontend Development
-              </span> */}
+                Software Developer
+              </span>
               <span
                 className="px-4 py-2 bg-secondary rounded-lg text-sm font-medium"
                 data-testid="skill-tag-fullstack"
               >
-                Full-Stack Development
+                Full-Stack Developer
               </span>
             </div>
           </div>
